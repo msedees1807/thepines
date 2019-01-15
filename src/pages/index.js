@@ -128,7 +128,7 @@ class HomeIndex extends React.Component {
             <Visible sm md lg xl>
               <ul className="actions">
                 <li>
-                  <Link to="/thepines/menu">Menu</Link>
+                  <Link to="/menu">Menu</Link>
                 </li>
               </ul>
             </Visible>
