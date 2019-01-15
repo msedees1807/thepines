@@ -3,6 +3,12 @@ import React from 'react'
 import Footer from './Footer'
 import avatar from '../assets/images/avatar.jpg'
 
+// style={{
+//   fontFamily: 'Libre Baskerville',
+//   fontSize: '5rem',
+//   color: 'white',
+// }}
+
 class Header extends React.Component {
   render() {
     return (
@@ -14,15 +20,7 @@ class Header extends React.Component {
           <h1>
             <strong>Welcome to</strong>
             <br />
-            <h1
-              style={{
-                fontFamily: 'Libre Baskerville',
-                fontSize: '5rem',
-                color: 'white',
-              }}
-            >
-              The Pines
-            </h1>
+            <h1>The Pines</h1>
             <h2>Coffee Lounge & Diner</h2>
             <h5>Est. '03</h5>
           </h1>

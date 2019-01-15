@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/thepines',
   siteMetadata: {
     title: 'The Pines Coffee Lounge & Diner',
     author: 'Marc Edees',
@@ -41,17 +42,17 @@ module.exports = {
       },
     },
   ],
-  plugins: [
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Libre Baskerville`,
-            variants: [`400`, `700`],
-          },
-        ],
-      },
-    },
-  ],
+  // plugins: [
+  //   {
+  //     resolve: `gatsby-plugin-prefetch-google-fonts`,
+  //     options: {
+  //       fonts: [
+  //         {
+  //           family: `Libre Baskerville`,
+  //           variants: [`400`, `700`],
+  //         },
+  //       ],
+  //     },
+  //   },
+  // ],
 }
