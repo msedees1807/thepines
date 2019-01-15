@@ -4,6 +4,7 @@ import Template from '../components/Layout'
 import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 import Navbar from '../components/Navbar'
+import { Link } from 'gatsby'
 import {
   Container,
   Row,
@@ -94,9 +95,6 @@ class HomeIndex extends React.Component {
 
     this.gotoNext()
   }
-  handleMenuClick() {
-    console.log('menu here :)')
-  }
 
   render() {
     const siteTitle = 'The Pines Coffee Lounge & Diner'
@@ -130,13 +128,7 @@ class HomeIndex extends React.Component {
             <Visible sm md lg xl>
               <ul className="actions">
                 <li>
-                  <a
-                    href="/menu"
-                    className="button"
-                    onClick={this.handleMenuClick}
-                  >
-                    Menu
-                  </a>
+                  <Link to="/thepines/menu">Menu</Link>
                 </li>
               </ul>
             </Visible>
