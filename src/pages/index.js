@@ -3,15 +3,8 @@ import Helmet from 'react-helmet'
 import Template from '../components/Layout'
 import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
-import Navbar from '../components/Navbar'
 import { Link } from 'gatsby'
-import {
-  Container,
-  Row,
-  Col,
-  Visible,
-  ScreenClassRender,
-} from 'react-grid-system'
+import { Visible } from 'react-grid-system'
 
 import full01 from '../assets/images/fulls/front.jpg'
 import full02 from '../assets/images/fulls/01.jpg'
@@ -106,17 +99,13 @@ class HomeIndex extends React.Component {
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
         </Helmet>
-        <Navbar />
 
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2 style={{ fontFamily: 'Libre Baskerville' }}>
-                We'd like you to join us here at The Pines...
-              </h2>
+              <h2>Traditional and honest food.</h2>
             </header>
             <p>
-              <strong>16 years</strong>
               traditional home cooked food warm, friendly atmosphere well priced
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit
               debitis incidunt recusandae dolorum! Amet repudiandae molestiae,
