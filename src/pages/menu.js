@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'gatsby'
+
 import {
   Container,
   Row,
@@ -6,13 +8,13 @@ import {
   Visible,
   ScreenClassRender,
 } from 'react-grid-system'
+
+import Tooltip from '@material-ui/core/Tooltip'
 import styled from 'styled-components'
+
 // import menudata from '../data/menudata'
-
 // rfc rcc followed by tab creates functional / class components
-
 //lorem40 followed by tab will add test text
-
 // style={{background:'red'}}  inline styles can be applied
 
 const TableRow = styled.tr`
@@ -31,27 +33,19 @@ const style = {
 }
 
 export default class Menu extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      menuArray: '',
-    }
-  }
-
-  componentDidMount() {
-    console.log('Setting state')
-    this.setState({ menuArray: 'hello' })
-  }
-
-  doThis() {
-    console.log(this.menuArray)
-  }
-
   render() {
     return (
       <div>
         <h1>Menu</h1>
-        <button onClick={this.doThis}>CLICK ME !!!!</button>
+
+        <div>
+          <Tooltip title="Close Menu">
+            <Link to="./">
+              <h2>Home</h2>
+            </Link>
+          </Tooltip>
+        </div>
+
         <p style={style.p}>
           Breaded plaice Whitby breaded scampi Steak pie Meat and potato pie
           Turkey and leek pie Chicken and ham pie Chicken and mushroom pie Mince
@@ -63,7 +57,6 @@ export default class Menu extends React.Component {
           chips Tea Cafe au lait Cappuccino Hot chocolate Cans Mineral water
           various flavours Plastic bottles of pop Glass of cordial
         </p>
-
         <Container>
           <Row>
             <Col sm={4}>
@@ -109,7 +102,6 @@ export default class Menu extends React.Component {
             <Col sm={4}>Sausages Chicken nuggets </Col>
           </Row>
         </Container>
-
         <p>
           <span>Your current screen class is </span>
           <Visible xs>
@@ -121,7 +113,6 @@ export default class Menu extends React.Component {
 
           <span>.</span>
         </p>
-
         <ScreenClassRender
           render={screenClass => (
             <p

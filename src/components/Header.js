@@ -1,6 +1,8 @@
 import React from 'react'
 import Footer from './Footer'
 import avatar from '../assets/images/avatar.jpg'
+import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
 
 // style={{
 //   fontFamily: 'Libre Baskerville',
@@ -11,21 +13,57 @@ import avatar from '../assets/images/avatar.jpg'
 class Header extends React.Component {
   render() {
     return (
-      <header id="header">
-        <div className="inner">
-          <a href="#" className="image avatar">
-            <img src={avatar} alt="" />
-          </a>
-          <h1>
-            <strong>Welcome to</strong>
-            <br />
-            <h1 style={{ fontSize: '3.5em' }}>The Pines</h1>
-            <h3>Coffee Lounge & Diner</h3>
-            <h5>Est. '03</h5>
-          </h1>
-        </div>
-        <Footer />
-      </header>
+      <StaticQuery
+        query={graphql`
+          query HeaderQuery {
+            file(relativePath: { eq: "bg.jpg" }) {
+              childImageSharp {
+                fixed(width: 600) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        `}
+        render={data => (
+          <header id="header">
+            {/* <Img
+              fixed={data.file.childImageSharp.fixed}
+              style={
+                {
+                  //backgroundColor: _palette(accent2, bg),
+                  //backgroundAttachment: scroll,fixed,
+                  // background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
+                  //backgroundPosition: top left, top left,
+                  //backgroundRepeat: repeat, no-repeat,
+                  //backgroundSize: auto, auto 100%,
+                  //color: _palette(accent2, fg),
+                  //height: 100%,
+                  //left: 0,
+                  //padding: ($size-header-pad * 2) $size-header-pad,
+                  // position: fixed,
+                  //textAlign: right,
+                  //top: 0,
+                  //width: $size - header - width,
+                }
+              }
+            /> */}
+            <div className="inner">
+              <a href="#" className="image avatar">
+                <img src={avatar} alt="" />
+              </a>
+              <h1>
+                <strong>Welcome to</strong>
+                <br />
+                <h1 style={{ fontSize: '3.5em' }}>The Pines</h1>
+                <h3>Coffee Lounge & Diner</h3>
+                <h5>Est. '03</h5>
+              </h1>
+            </div>
+            <Footer />
+          </header>
+        )}
+      />
     )
   }
 }
