@@ -41,7 +41,7 @@ export default class Menu extends React.Component {
             <Col sm={4}>
               <table>
                 <th>
-                  <h2>Breakfast</h2>
+                  <h2>Breakfast </h2>
                 </th>
 
                 <tr>
