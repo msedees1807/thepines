@@ -49,15 +49,12 @@ class Header extends React.Component {
               }
             /> */}
             <div className="inner">
-              <a href="#" className="image avatar">
-                <img src={avatar} alt="" />
-              </a>
               <h1>
                 <strong>Welcome to</strong>
                 <br />
                 <h1 style={{ fontSize: '3.5em' }}>The Pines</h1>
                 <h3>Coffee Lounge & Diner</h3>
-                <h5>Est. '03</h5>
+                <h5>Established 2003.</h5>
               </h1>
             </div>
             <Footer />

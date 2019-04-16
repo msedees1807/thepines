@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import Template from '../components/Layout'
 import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
-import ContactForm from '../components/ContactForm'
 import { Link } from 'gatsby'
 import { Visible } from 'react-grid-system'
 
@@ -120,7 +119,7 @@ class HomeIndex extends React.Component {
               <ul className="actions">
                 <li>
                   <Link to="/menu" style={{ fontSize: '2em' }}>
-                    Menu
+                    View Menu
                   </Link>
                 </li>
               </ul>
@@ -142,8 +141,6 @@ class HomeIndex extends React.Component {
               )}
             />
           </section>
-
-          <ContactForm />
         </div>
       </Template>
     )
