@@ -10,8 +10,11 @@ import {
 
 import styled from 'styled-components'
 import CloseButton from '../components/menu/closeButton'
-import MenuCard from '../components/menu/menuCard'
-import menuCard from '../components/menu/menuCard'
+
+import { breakfast } from '../data/menudata'
+import { lightBites } from '../data/menudata'
+import { softRolls } from '../data/menudata'
+import { burgers } from '../data/menudata'
 
 const TableRow = styled.tr`
   font-size: 2em;
@@ -27,64 +30,62 @@ const menuFrame = {
   marginRight: '10%',
 }
 
+const menuCard = {
+  boxShadow: '8px 8px 5px #80808014',
+}
+
+const menuCardItem = {
+  margin: '2%',
+}
+
+const price = {
+  float: 'right',
+}
+
+const MenuItem = props => {
+  return (
+    <div style={menuCardItem}>
+      <h3>{props.item.name}</h3>
+      <h3 style={price}>{props.item.price}</h3>
+      <h5>{props.item.description}</h5>
+    </div>
+  )
+}
+
+// Functional component (doesn't need state, super or constructor)
+// Export default is used as we only export one function from this file, 'Menu'.
+
 export default class Menu extends React.Component {
   render() {
     return (
       <div style={menuFrame}>
         <h1>Menu</h1>
 
-        <MenuCard />
+        <div style={menuCard}>
+          {breakfast.map(data => (
+            <MenuItem item={data} />
+          ))}
+        </div>
+
+        <div style={menuCard}>
+          {lightBites.map(data => (
+            <MenuItem item={data} />
+          ))}
+        </div>
+
+        <div style={menuCard}>
+          {softRolls.map(data => (
+            <MenuItem item={data} />
+          ))}
+        </div>
+
+        <div style={menuCard}>
+          {burgers.map(data => (
+            <MenuItem item={data} />
+          ))}
+        </div>
+
         <CloseButton />
-
-        <Container>
-          <Row>
-            <Col sm={4}>
-              <table>
-                <th>
-                  <h2>Breakfast </h2>
-                </th>
-
-                <tr>
-                  <tc>Toasted Teacake</tc>
-                  <tc>£4.99</tc>
-                </tr>
-                <tr>
-                  <tc>Beans on Toast</tc>
-                  <tc>£4.99</tc>
-                </tr>
-                <tr>
-                  <tc>Bacon Sandwich</tc>
-                  <tc>£4.99</tc>
-                </tr>
-                <tr>
-                  <tc>Sausage Sandwich</tc>
-                  <tc>£4.99</tc>
-                </tr>
-              </table>
-            </Col>
-
-            <Col sm={4}>
-              Cheese Ham Tuna and mayonnaise Prawns with Marie Rose sauce Burger
-              Cheese burger Beef burger
-            </Col>
-
-            <Col sm={4}>Sausages Chicken nuggets </Col>
-          </Row>
-
-          <Row>
-            <Col sm={4}>
-              Breakfast Soup Toasted tea cake Beans on Toast Bacon sandwich
-              Sausage sandwich
-            </Col>
-
-            <Col sm={4}>
-              Cheese Ham Tuna and mayonnaise Prawns with Marie Rose sauce Burger
-              Cheese burger Beef burger
-            </Col>
-
-            <Col sm={4}>Sausages Chicken nuggets </Col>
-          </Row>
-        </Container>
       </div>
     )
   }
