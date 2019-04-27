@@ -1,14 +1,5 @@
 import React from 'react'
 
-import {
-  Container,
-  Row,
-  Col,
-  Visible,
-  ScreenClassRender,
-} from 'react-grid-system'
-
-import styled from 'styled-components'
 import CloseButton from '../components/menu/closeButton'
 
 import { breakfast } from '../data/menudata'
@@ -16,14 +7,6 @@ import { lightBites } from '../data/menudata'
 import { softRolls } from '../data/menudata'
 import { burgers } from '../data/menudata'
 
-const TableRow = styled.tr`
-  font-size: 2em;
-  color: black;
-
-  @media (max-width: 400px) {
-    font-size: 1em;
-  }
-`
 const menuFrame = {
   marginTop: '5%',
   marginLeft: '10%',
