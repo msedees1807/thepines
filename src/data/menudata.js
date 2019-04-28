@@ -1,6 +1,6 @@
 export const breakfast = [
   {
-    name: 'Breakfast',
+    name: 'Cooked Breakfast',
     price: '£4.90',
     description:
       '2 Bacon, 2 Sausages, Fried Egg, Beans, Tomato, Toast. - Served until 11:30am',
@@ -52,7 +52,7 @@ export const softRolls = [
     description: null,
   },
   {
-    name: 'Prawns with Marie Rose Sauce',
+    name: 'Prawns with Marié Rose Sauce',
     price: '£4.20',
     description: null,
   },

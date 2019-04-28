@@ -14,23 +14,34 @@ const menuFrame = {
 }
 
 const menuCard = {
-  boxShadow: '8px 8px 5px #80808014',
+  boxShadow: '15px 15px 15px 5px #80808014',
+  margin: '8%',
+  padding: '2%',
 }
 
 const menuCardItem = {
   margin: '2%',
+  overflow: 'auto',
+}
+
+const name = {
+  display: 'inline',
 }
 
 const price = {
   float: 'right',
 }
 
+const description = {
+  display: 'block',
+}
+
 const MenuItem = props => {
   return (
     <div style={menuCardItem}>
-      <h3>{props.item.name}</h3>
+      <h3 style={name}>{props.item.name}</h3>
       <h3 style={price}>{props.item.price}</h3>
-      <h5>{props.item.description}</h5>
+      <h5 style={description}>{props.item.description}</h5>
     </div>
   )
 }
@@ -45,24 +56,28 @@ export default class Menu extends React.Component {
         <h1>Menu</h1>
 
         <div style={menuCard}>
+          <h2>Breakfasts</h2>
           {breakfast.map(data => (
             <MenuItem item={data} />
           ))}
         </div>
 
         <div style={menuCard}>
+          <h2>Light Bites</h2>
           {lightBites.map(data => (
             <MenuItem item={data} />
           ))}
         </div>
 
         <div style={menuCard}>
+          <h2>Soft Rolls</h2>
           {softRolls.map(data => (
             <MenuItem item={data} />
           ))}
         </div>
 
         <div style={menuCard}>
+          <h2>Burgers</h2>
           {burgers.map(data => (
             <MenuItem item={data} />
           ))}
