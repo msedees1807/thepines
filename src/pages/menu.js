@@ -2,16 +2,20 @@ import React from 'react'
 
 import CloseButton from '../components/menu/closeButton'
 
-import { breakfast } from '../data/menudata'
-import { lightBites } from '../data/menudata'
-import { softRolls } from '../data/menudata'
-import { burgers } from '../data/menudata'
-
-const menuFrame = {
-  marginTop: '5%',
-  marginLeft: '10%',
-  marginRight: '10%',
-}
+import {
+  breakfast,
+  lightBites,
+  softRolls,
+  burgers,
+  fish,
+  pies,
+  other,
+  desserts,
+  childrensChoice,
+  cakes,
+  sideOrders,
+  beverages,
+} from '../data/menudata'
 
 const menuCard = {
   boxShadow: '15px 15px 15px 5px #80808014',
@@ -24,7 +28,7 @@ const menuCardItem = {
   overflow: 'auto',
 }
 
-const name = {
+const nameStyle = {
   display: 'inline',
 }
 
@@ -36,12 +40,12 @@ const description = {
   display: 'block',
 }
 
-const MenuItem = props => {
+const MenuItem = ({ item }) => {
   return (
     <div style={menuCardItem}>
-      <h3 style={name}>{props.item.name}</h3>
-      <h3 style={price}>{props.item.price}</h3>
-      <h5 style={description}>{props.item.description}</h5>
+      <h3 style={nameStyle}>{item.name}</h3>
+      <h3 style={price}>{item.price}</h3>
+      <h5 style={description}>{item.description}</h5>
     </div>
   )
 }
@@ -52,39 +56,98 @@ const MenuItem = props => {
 export default class Menu extends React.Component {
   render() {
     return (
-      <div style={menuFrame}>
-        <h1>Menu</h1>
-
-        <div style={menuCard}>
-          <h2>Breakfasts</h2>
-          {breakfast.map(data => (
-            <MenuItem item={data} />
-          ))}
+      <>
+        <div className="menuHeader">
+          <h1 className="menuTitle">Menu</h1>
+          <CloseButton />
         </div>
+        <div className="menuFrame">
+          <div style={menuCard}>
+            <h2>Breakfasts</h2>
+            {breakfast.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
 
-        <div style={menuCard}>
-          <h2>Light Bites</h2>
-          {lightBites.map(data => (
-            <MenuItem item={data} />
-          ))}
+          <div style={menuCard}>
+            <h2>Light Bites</h2>
+            {lightBites.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Soft Rolls</h2>
+            {softRolls.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Burgers</h2>
+            {burgers.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Fish Dishes</h2>
+            {fish.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Homemade Pies</h2>
+            {pies.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Other Main Meals</h2>
+            <h3>Further meals available on our daily specials board.</h3>
+            {other.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Children's Choice</h2>
+            {childrensChoice.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Desserts</h2>
+            {desserts.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Cakes</h2>
+            {cakes.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Side Orders</h2>
+            {sideOrders.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
+
+          <div style={menuCard}>
+            <h2>Beverages</h2>
+            {beverages.map(data => (
+              <MenuItem item={data} />
+            ))}
+          </div>
         </div>
-
-        <div style={menuCard}>
-          <h2>Soft Rolls</h2>
-          {softRolls.map(data => (
-            <MenuItem item={data} />
-          ))}
-        </div>
-
-        <div style={menuCard}>
-          <h2>Burgers</h2>
-          {burgers.map(data => (
-            <MenuItem item={data} />
-          ))}
-        </div>
-
-        <CloseButton />
-      </div>
+      </>
     )
   }
 }

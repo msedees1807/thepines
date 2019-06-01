@@ -7,48 +7,26 @@ import Tooltip from '@material-ui/core/Tooltip'
 
 const styles = {
   Fab: {
-    marginLeft: '10%',
-    marginTop: '80vh',
-    float: 'left',
+    float: 'right',
+    margin: '5%',
+    bottom: '2vh',
     position: 'fixed',
+    right: '2vw',
     zIndex: 1000,
   },
 }
 
 export default class Hamburger extends React.Component {
-  handleClick() {
-    this.setState({ open: !this.state.open })
-    console.log('open:' + this.state.open)
-  }
-
   render() {
-    this.state = {
-      open: false,
-    }
-
     return (
       <div>
-        {this.state.open ? (
-          <div>
-            <Tooltip title="View Menu">
-              <Fab
-                href="./menu"
-                style={styles.Fab}
-                onClick={this.handleClick.bind(this)}
-              >
-                <img src={HamburgerIcon} />
-              </Fab>
-            </Tooltip>
-          </div>
-        ) : (
-          <div>
-            <Tooltip title="View Menu">
-              <Fab style={styles.Fab} onClick={this.handleClick.bind(this)}>
-                <img src={HamburgerIcon} />
-              </Fab>
-            </Tooltip>
-          </div>
-        )}
+        <div>
+          <Tooltip title="View Menu">
+            <Fab href="./menu" style={styles.Fab}>
+              <img src={HamburgerIcon} />
+            </Fab>
+          </Tooltip>
+        </div>
       </div>
     )
   }

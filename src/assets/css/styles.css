@@ -1,0 +1,42 @@
+.menuFrame {
+  margin-top: 5%;
+}
+
+.menuTitle {
+  padding: 5%;
+}
+
+.closeButton {
+  color: rgb(122, 122, 122);
+  text-decoration: none;
+  float: right;
+  margin: 5%;
+  bottom: 2vh;
+  position: fixed;
+  right: 2vw;
+  background: rgb(224, 224, 224);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 7px 3px #8080806b;
+}
+
+/* ---------- Larger Devices --------- */
+
+@media (min-width: 450px) {
+  .menuFrame {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .closeButton {
+    color: grey;
+    text-decoration: none;
+    float: right;
+    margin: 5%;
+    top: 0;
+    position: fixed;
+    right: 10px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+}
