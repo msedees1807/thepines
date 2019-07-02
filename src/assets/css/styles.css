@@ -1,16 +1,27 @@
+html {
+  background-color: #d4d4d430;
+}
+
+h1,
+h2,
+p {
+  font-family: 'Indie Flower', cursive;
+}
 .menuFrame {
-  margin-top: 5%;
+  margin-top: 20px;
 }
 
 .menuTitle {
-  padding: 5%;
+  padding: 0.5vh;
+  padding-left: 2vw;
+  font-family: 'Indie Flower', cursive;
 }
 
 .closeButton {
   color: rgb(122, 122, 122);
   text-decoration: none;
   float: right;
-  margin: 5%;
+  margin: 5px;
   bottom: 2vh;
   position: fixed;
   right: 2vw;
@@ -24,14 +35,35 @@
 
 @media (min-width: 450px) {
   .menuFrame {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 12%;
+    margin-right: 12%;
   }
   .closeButton {
     color: grey;
     text-decoration: none;
     float: right;
-    margin: 5%;
+    top: 0;
+    position: fixed;
+    right: 5px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .menuFrame {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .closeButton {
+    color: grey;
+    text-decoration: none;
+    float: right;
+    margin: 5px;
     top: 0;
     position: fixed;
     right: 10px;

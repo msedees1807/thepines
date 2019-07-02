@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: 'The Pines Coffee Lounge & Diner',
     author: 'Marc Edees',
-    description: 'A Gatsby.js Starter based on Strata by HTML5 UP',
+    description: 'The Pines Coffee Lounge & Diner. Established 2003.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

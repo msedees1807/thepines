@@ -4,36 +4,46 @@ import CloseButton from '../components/menu/closeButton'
 
 import {
   breakfast,
-  lightBites,
   softRolls,
   burgers,
   fish,
   pies,
   other,
   desserts,
-  childrensChoice,
   cakes,
   sideOrders,
   beverages,
 } from '../data/menudata'
 
+const pageStyle = {
+  background: '#d4d4d430',
+  marginBottom: '120px',
+}
+
 const menuCard = {
-  boxShadow: '15px 15px 15px 5px #80808014',
-  margin: '8%',
-  padding: '2%',
+  boxShadow: '15px 15px 15px 5px rgba(128, 128, 128, 0.27)',
+  marginBottom: '30px',
+  padding: '25px',
+  background: 'white',
 }
 
 const menuCardItem = {
-  margin: '2%',
+  margin: '5px',
   overflow: 'auto',
+}
+
+const cardTitle = {
+  color: '#005400',
 }
 
 const nameStyle = {
   display: 'inline',
+  color: '#3e3e3e',
 }
 
 const price = {
   float: 'right',
+  color: ' #3e3e3e',
 }
 
 const description = {
@@ -43,8 +53,8 @@ const description = {
 const MenuItem = ({ item }) => {
   return (
     <div style={menuCardItem}>
-      <h3 style={nameStyle}>{item.name}</h3>
-      <h3 style={price}>{item.price}</h3>
+      <h4 style={nameStyle}>{item.name}</h4>
+      <h4 style={price}>{item.price}</h4>
       <h5 style={description}>{item.description}</h5>
     </div>
   )
@@ -56,98 +66,90 @@ const MenuItem = ({ item }) => {
 export default class Menu extends React.Component {
   render() {
     return (
-      <>
+      <div style={pageStyle}>
         <div className="menuHeader">
-          <h1 className="menuTitle">Menu</h1>
+          <h1 className="menuTitle">The Pines Menu</h1>
           <CloseButton />
         </div>
         <div className="menuFrame">
           <div style={menuCard}>
-            <h2>Breakfasts</h2>
+            <h2 style={cardTitle}>Breakfasts and Light Bites</h2>
             {breakfast.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
 
           <div style={menuCard}>
-            <h2>Light Bites</h2>
-            {lightBites.map(data => (
-              <MenuItem item={data} />
-            ))}
-          </div>
-
-          <div style={menuCard}>
-            <h2>Soft Rolls</h2>
+            <h2 style={cardTitle}>Soft Rolls</h2>
             {softRolls.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
 
           <div style={menuCard}>
-            <h2>Burgers</h2>
+            <h2 style={cardTitle}>Burgers</h2>
+            Served with chips, salad and coleslaw
             {burgers.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
 
           <div style={menuCard}>
-            <h2>Fish Dishes</h2>
+            <h2 style={cardTitle}>Fish Dishes</h2>
+            Served with chips or new potatoes, peas and salad
             {fish.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
 
           <div style={menuCard}>
-            <h2>Homemade Pies</h2>
+            <h2 style={cardTitle}>Homemade Pies</h2>
+            Served with chips or new potatoes, peas and carrots
             {pies.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
 
           <div style={menuCard}>
-            <h2>Other Main Meals</h2>
-            <h3>Further meals available on our daily specials board.</h3>
+            <h2 style={cardTitle}>Other Main Meals</h2>
+            Served with chips or new potatoes, peas and carrots
             {other.map(data => (
               <MenuItem item={data} />
             ))}
+            <h4 style={cardTitle}>
+              Further meals available on our daily specials board.
+            </h4>
           </div>
 
           <div style={menuCard}>
-            <h2>Children's Choice</h2>
-            {childrensChoice.map(data => (
-              <MenuItem item={data} />
-            ))}
-          </div>
-
-          <div style={menuCard}>
-            <h2>Desserts</h2>
+            <h2 style={cardTitle}>Desserts</h2>
             {desserts.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
 
           <div style={menuCard}>
-            <h2>Cakes</h2>
+            <h2 style={cardTitle}>Cakes</h2>
             {cakes.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
 
           <div style={menuCard}>
-            <h2>Side Orders</h2>
+            <h2 style={cardTitle}>Side Orders</h2>
             {sideOrders.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
 
           <div style={menuCard}>
-            <h2>Beverages</h2>
+            <h2 style={cardTitle}>Beverages</h2>
             {beverages.map(data => (
               <MenuItem item={data} />
             ))}
           </div>
         </div>
-      </>
+      </div>
     )
   }
 }

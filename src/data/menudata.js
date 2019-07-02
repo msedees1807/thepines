@@ -3,20 +3,7 @@ export const breakfast = [
     name: 'Cooked Breakfast',
     price: '£4.90',
     description:
-      '2 Bacon, 2 Sausages, Fried Egg, Beans, Tomato, Toast. - Served until 11:30am',
-  },
-]
-
-export const lightBites = [
-  {
-    name: 'Soup',
-    price: '£3.00',
-    description: 'Served with roll and butter.',
-  },
-  {
-    name: 'Toasted Teacake',
-    price: '£1.70',
-    description: null,
+      'Served until 11:30am (2 Bacon, 2 Sausages, Fried Egg, Beans, Tomato, Toast)',
   },
   {
     name: 'Beans on Toast',
@@ -31,6 +18,16 @@ export const lightBites = [
   {
     name: 'Sausage Sandwich',
     price: '£2.70',
+    description: null,
+  },
+  {
+    name: 'Soup',
+    price: '£3.00',
+    description: 'Served with roll and butter.',
+  },
+  {
+    name: 'Toasted Teacake',
+    price: '£1.70',
     description: null,
   },
 ]
@@ -62,12 +59,12 @@ export const burgers = [
   {
     name: '4oz Beef Burger',
     price: '£4.30',
-    description: 'Served with chips, salad and coleslaw',
+    description: null,
   },
   {
     name: '4oz Cheese Burger',
     price: '£4.50',
-    description: 'Served with chips, salad and coleslaw',
+    description: null,
   },
 ]
 
@@ -75,12 +72,12 @@ export const fish = [
   {
     name: 'Breaded Plaice',
     price: '£5.80',
-    description: 'Served with chips or new potatoes, peas and salad',
+    description: null,
   },
   {
     name: 'Whitby Breaded Scampi',
     price: '£6.60',
-    description: 'Served with chips or new potatoes, peas and salad',
+    description: null,
   },
 ]
 
@@ -88,32 +85,32 @@ export const pies = [
   {
     name: 'Steak Pie',
     price: '£5.80',
-    description: 'Served with chips or new potatoes, peas and carrots',
+    description: null,
   },
   {
     name: 'Meat and Potato Pie',
     price: '£5.80',
-    description: 'Served with chips or new potatoes, peas and carrots',
+    description: null,
   },
   {
     name: 'Turkey and Leek Pie',
     price: '£5.80',
-    description: 'Served with chips or new potatoes, peas and carrots',
+    description: null,
   },
   {
     name: 'Chicken and Ham Pie',
     price: '£5.80',
-    description: 'Served with chips or new potatoes, peas and carrots',
+    description: null,
   },
   {
     name: 'Chicken and Mushroom Pie',
     price: '£5.80',
-    description: 'Served with chips or new potatoes, peas and carrots',
+    description: null,
   },
   {
     name: 'Mince and Onion Pie',
     price: '£5.80',
-    description: 'Served with chips or new potatoes, peas and carrots',
+    description: null,
   },
 ]
 
@@ -121,14 +118,18 @@ export const other = [
   {
     name: '6oz Gammon',
     price: '£5.80',
-    description:
-      'Served with chips or new potatoes, peas and carrots, and egg or garlic bread',
+    description: 'and an egg or garlic bread',
   },
   {
     name: 'Beef Lasagne',
     price: '£6.60',
-    description:
-      'Served with chips or new potatoes, peas and carrots, and garlic bread',
+    description: 'and garlic bread',
+  },
+  {
+    name:
+      'Childrens Meals: Beefburger, Sausages, Fish Fingers or Chicken Nuggets',
+    price: '£3.40',
+    description: 'Served with chips and peas or baked beans',
   },
 ]
 
@@ -172,14 +173,6 @@ export const desserts = [
     name: 'Vanilla Ice Cream',
     price: '£2.90',
     description: null,
-  },
-]
-
-export const childrensChoice = [
-  {
-    name: 'A Choice of Beefburger / Sausages / Fish Fingers / Chicken Nuggets',
-    price: '£3.40',
-    description: 'Served with chips and peas or baked beans',
   },
 ]
 
@@ -236,7 +229,8 @@ export const sideOrders = [
 export const beverages = [
   {
     name: 'Tea',
-    price: '(Regular / Large) £1.30 / £1.40',
+    price: '£1.30 / £1.40',
+    description: '(Regular / Large) ',
   },
   {
     name: 'White Coffee',
@@ -251,16 +245,18 @@ export const beverages = [
     price: '£1.70 / £1.80',
   },
   {
-    name: 'Cans (Coca Cola/ Diet Coke / 7 Up / Fanta and more)',
+    name: 'Cans',
     price: '£1.00',
+    description: '(Coca Cola/ Diet Coke / 7 Up / Fanta and more)',
   },
   {
     name: 'Bottled and Flavoured Water',
     price: '£1.00',
   },
   {
-    name: 'Childrens Drinks (Orangade / Cherryade / Lemonade)',
+    name: 'Childrens Drinks',
     price: '£0.90',
+    description: '(Orangade / Cherryade / Lemonade)',
   },
   {
     name: 'Orange Cordial',

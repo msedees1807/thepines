@@ -99,6 +99,10 @@ class HomeIndex extends React.Component {
         <Helmet>
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
+          <link
+            href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+            rel="stylesheet"
+          />
         </Helmet>
 
         <div id="main">
