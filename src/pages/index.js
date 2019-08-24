@@ -41,7 +41,7 @@ const DEFAULT_IMAGES = [
     thumbnail: full04,
     caption: 'Family owned and managed',
     description:
-      'Since 2003, we have apreciated the support of our customers. Thank you.',
+      'Since 2002, we have apreciated the support of our customers. Thank you.',
   },
 ]
 

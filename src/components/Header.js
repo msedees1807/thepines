@@ -54,7 +54,7 @@ class Header extends React.Component {
                 <br />
                 <h1 style={{ fontSize: '3.5em' }}>The Pines</h1>
                 <h3>Coffee Lounge & Diner</h3>
-                <h5>Established 2003.</h5>
+                <h5>Established 2002.</h5>
               </h1>
             </div>
             <Footer />

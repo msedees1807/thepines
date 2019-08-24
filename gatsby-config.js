@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: 'The Pines Coffee Lounge & Diner',
     author: 'Marc Edees',
-    description: 'The Pines Coffee Lounge & Diner. Established 2003.',
+    description: 'The Pines Coffee Lounge & Diner. Established 2002.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
