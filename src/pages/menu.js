@@ -69,7 +69,7 @@ export default class Menu extends React.Component {
     return (
       <div style={pageStyle}>
         <div className="menuHeader">
-          <h1>The Pines Menu</h1>
+          <h1 style={{ padding: '20px' }}>The Pines Menu</h1>
           <CloseButton />
         </div>
         <div className="menuFrame">

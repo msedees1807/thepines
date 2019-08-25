@@ -109,24 +109,28 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h1>Traditional and honest food.</h1>
+              <h2>Margaret and Malcolm welcome you ...</h2>
             </header>
             <p>
-              Malcolm and Margaret, would like to welcome you to our cafe, which
-              has a warm and friendly atmosphere. We provide an extensive
-              selection of delicious home cooked food, at very reasonable
-              prices. Breakfasts (served until 11:30am) hot and cold meals,
-              snacks, drinks and desserts.
+              We would like to welcome you to our cafe, which has a warm and
+              friendly atmosphere. We provide an extensive selection of
+              delicious home cooked food, at very reasonable prices. Breakfasts
+              (served until 11:30am), hot and cold meals, snacks, drinks and
+              desserts.
             </p>
-            <h2>Open daily 9.30am - 3.00pm (Closed Thursdays)</h2>
+            <h2 style={{ textAlign: 'center' }}>
+              Open daily 9.30am - 3.00pm (Closed Thursdays)
+            </h2>
             <Visible sm md lg xl>
-              <ul className="actions">
-                <li>
-                  <Link to="/menu" style={{ fontSize: '2em' }}>
-                    View Menu
-                  </Link>
-                </li>
-              </ul>
+              <div>
+                <ul className="actions">
+                  <li>
+                    <Link to="/menu" style={{ fontSize: '1.5em' }}>
+                      View Menu
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </Visible>
           </section>
 
@@ -145,10 +149,11 @@ class HomeIndex extends React.Component {
           </section>
           <section id="three">
             <div style={{ margin: 'auto', display: 'block' }}>
-              <img src={FiveStar} alt="Five star hygene rating." />
-              <p style={{ size: '0.25rem' }}>
-                We are proud to be awarded a 5 star hygene rating.
-              </p>
+              <img
+                src={FiveStar}
+                alt="Five star hygene rating."
+                style={{ boxShadow: '#909090a3 10px 10px 14px' }}
+              />
             </div>
           </section>
         </div>
