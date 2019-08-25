@@ -10,6 +10,7 @@ import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
 import full03 from '../assets/images/fulls/03.jpg'
 import full04 from '../assets/images/fulls/04.jpg'
+import FiveStar from '../assets/images/fulls/5-star.jpg'
 
 import { relative } from 'path'
 
@@ -100,7 +101,7 @@ class HomeIndex extends React.Component {
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
           <link
-            href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+            href="https://fonts.googleapis.com/css?family=Lora:700|Merriweather&display=swap"
             rel="stylesheet"
           />
         </Helmet>
@@ -114,7 +115,7 @@ class HomeIndex extends React.Component {
               Malcolm and Margaret, would like to welcome you to our cafe, which
               has a warm and friendly atmosphere. We provide an extensive
               selection of delicious home cooked food, at very reasonable
-              prices. Breakfasts (served until 11:30am) Hot and cold meals,
+              prices. Breakfasts (served until 11:30am) hot and cold meals,
               snacks, drinks and desserts.
             </p>
             <h2>Open daily 9.30am - 3.00pm (Closed Thursdays)</h2>
@@ -141,6 +142,14 @@ class HomeIndex extends React.Component {
                 })
               )}
             />
+          </section>
+          <section id="three">
+            <div style={{ margin: 'auto', display: 'block' }}>
+              <img src={FiveStar} alt="Five star hygene rating." />
+              <p style={{ size: '0.25rem' }}>
+                We are proud to be awarded a 5 star hygene rating.
+              </p>
+            </div>
           </section>
         </div>
       </Template>

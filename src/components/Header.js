@@ -19,15 +19,10 @@ class Header extends React.Component {
         `}
         render={data => (
           <header id="header">
-            {/* <h1>
-              Welcome to
-              <br />
-              <h1 style={{ fontSize: '3em' }}>The Pines</h1>
-              <h3>Coffee Lounge & Diner</h3>
-              <h5>Established 2002.</h5>
-            </h1> */}
-            <h3>Welcome to</h3>
-            <h1 style={{ fontSize: '3em' }}>THE PINES</h1>
+            Welcome to
+            <h1 className="titleText" style={{ fontSize: '3em' }}>
+              THE PINES
+            </h1>
             <h3>Coffee Lounge & Diner</h3>
             <p>Est. 2002</p>
             <h4>
