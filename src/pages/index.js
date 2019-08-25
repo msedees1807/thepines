@@ -6,10 +6,10 @@ import Gallery from '../components/Gallery'
 import { Link } from 'gatsby'
 import { Visible } from 'react-grid-system'
 
-import full01 from '../assets/images/fulls/front.jpg'
-import full02 from '../assets/images/fulls/01.jpg'
-import full03 from '../assets/images/fulls/04.jpg'
-import full04 from '../assets/images/fulls/margo.jpg'
+import full01 from '../assets/images/fulls/01.jpg'
+import full02 from '../assets/images/fulls/02.jpg'
+import full03 from '../assets/images/fulls/03.jpg'
+import full04 from '../assets/images/fulls/04.jpg'
 
 import { relative } from 'path'
 
@@ -108,7 +108,7 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>Traditional and honest food.</h2>
+              <h1>Traditional and honest food.</h1>
             </header>
             <p>
               Malcolm and Margaret, would like to welcome you to our cafe, which
@@ -117,8 +117,7 @@ class HomeIndex extends React.Component {
               prices. Breakfasts (served until 11:30am) Hot and cold meals,
               snacks, drinks and desserts.
             </p>
-            <h2>Open daily 9.30am - 3.00pm</h2>
-            <h4>(Closed Thursdays)</h4>
+            <h2>Open daily 9.30am - 3.00pm (Closed Thursdays)</h2>
             <Visible sm md lg xl>
               <ul className="actions">
                 <li>
@@ -131,8 +130,6 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="two">
-            <h2>Recent Work</h2>
-
             <Gallery
               style={{ position: relative, zindex: 1 }}
               images={DEFAULT_IMAGES.map(

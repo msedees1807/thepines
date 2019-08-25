@@ -25,6 +25,7 @@ const menuCard = {
   marginBottom: '30px',
   padding: '25px',
   background: 'white',
+  borderRadius: '8px',
 }
 
 const menuCardItem = {
@@ -68,7 +69,7 @@ export default class Menu extends React.Component {
     return (
       <div style={pageStyle}>
         <div className="menuHeader">
-          <h1 className="menuTitle">The Pines Menu</h1>
+          <h1>The Pines Menu</h1>
           <CloseButton />
         </div>
         <div className="menuFrame">
