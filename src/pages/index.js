@@ -122,14 +122,12 @@ class HomeIndex extends React.Component {
               Open daily 9.30am - 3.00pm (Closed Thursdays)
             </h2>
             <Visible sm md lg xl>
-              <div>
-                <ul className="actions">
-                  <li>
-                    <Link to="/menu" style={{ fontSize: '1.5em' }}>
-                      View Menu
-                    </Link>
-                  </li>
-                </ul>
+              <div
+                style={{ width: '50%', textAlign: 'center', margin: '0 auto' }}
+              >
+                <Link to="/menu" style={{ fontSize: '1.5em' }}>
+                  View Menu
+                </Link>
               </div>
             </Visible>
           </section>
