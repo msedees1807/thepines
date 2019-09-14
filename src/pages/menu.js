@@ -35,6 +35,7 @@ const menuCardItem = {
 
 const cardTitle = {
   color: '#005400',
+  fontWeight: 'bold',
 }
 
 const nameStyle = {

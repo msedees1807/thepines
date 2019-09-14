@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA - 146540711 - 1',
+        trackingId: 'UA-146540711-1',
         // Puts tracking script in the head instead of the body
         // head: false,
         // // Setting this parameter is optional
@@ -51,17 +51,4 @@ module.exports = {
       },
     },
   ],
-  // plugins: [
-  //   {
-  //     resolve: `gatsby-plugin-prefetch-google-fonts`,
-  //     options: {
-  //       fonts: [
-  //         {
-  //           family: `Libre Baskerville`,
-  //           variants: [`400`, `700`],
-  //         },
-  //       ],
-  //     },
-  //   },
-  // ],
 }
