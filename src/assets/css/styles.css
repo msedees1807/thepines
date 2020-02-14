@@ -3,18 +3,14 @@ html {
 }
 
 h1,
-h2,
 p {
   font-family: 'Merriweather', serif;
 }
 
-.titleText {
+.titleText,
+h2 {
   font-family: 'Lora', serif;
 }
-.menuFrame {
-  margin-top: 20px;
-}
-
 .menuTitle {
   padding: 0.5vh;
   padding-left: 2vw;
@@ -31,9 +27,13 @@ p {
   background: rgb(224, 224, 224);
   padding: 15px;
   border-radius: 50%;
-  box-shadow: 4px 4px 7px 3px #8080806b;
+  box-shadow: 0 3px 3px 0 #d6d6d6;
 }
-
+.closeButton:hover {
+  color: rgb(97, 97, 97);
+  background-color: #d3d3d32e;
+  transition: 0.3s;
+}
 /* ---------- Larger Devices --------- */
 
 @media (min-width: 450px) {
@@ -61,6 +61,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    max-width: 900px;
+    margin: auto;
   }
   .closeButton {
     color: grey;

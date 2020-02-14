@@ -21,11 +21,11 @@ const pageStyle = {
 }
 
 const menuCard = {
-  boxShadow: '15px 15px 15px 5px rgba(128, 128, 128, 0.27)',
+  boxShadow: '0 3px 3px 0 #d6d6d6',
   marginBottom: '30px',
   padding: '25px',
   background: 'white',
-  borderRadius: '8px',
+  borderRadius: '4px',
 }
 
 const menuCardItem = {
@@ -69,8 +69,17 @@ export default class Menu extends React.Component {
   render() {
     return (
       <div style={pageStyle}>
-        <div className="menuHeader">
-          <h1 style={{ padding: '20px' }}>The Pines Menu</h1>
+        <div
+          className="menuHeader"
+          style={{ padding: '15px', textAlign: 'center' }}
+        >
+          <h1
+            className="titleText"
+            style={{ fontSize: '3em', marginBottom: '0px' }}
+          >
+            THE PINES
+          </h1>
+          <h3>Coffee Lounge & Diner</h3>
           <CloseButton />
         </div>
         <div className="menuFrame">

@@ -21,7 +21,12 @@ class Header extends React.Component {
           <header id="header">
             <h1
               className="titleText"
-              style={{ fontSize: '3em', color: 'white' }}
+              style={{
+                fontSize: '3em',
+                color: 'white',
+                marginBottom: '0px',
+                whiteSpace: 'nowrap',
+              }}
             >
               THE PINES
             </h1>

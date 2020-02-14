@@ -112,11 +112,9 @@ class HomeIndex extends React.Component {
               <h2>Margaret and Malcolm welcome you ...</h2>
             </header>
             <p>
-              We would like to welcome you to our cafe, which has a warm and
-              friendly atmosphere. We provide an extensive selection of
-              delicious home cooked food, at very reasonable prices. Breakfasts
-              (served until 11:30am), hot and cold meals, snacks, drinks and
-              desserts.
+              We provide an extensive selection of delicious home cooked food,
+              at very reasonable prices. Breakfasts (served until 11:30am), hot
+              and cold meals, snacks, drinks and desserts.
             </p>
             <h2 style={{ textAlign: 'center' }}>
               Open daily 9.30am - 3.00pm (Closed Thursdays)
