@@ -145,11 +145,20 @@ class HomeIndex extends React.Component {
           </section>
           <section id="three">
             <div style={{ margin: 'auto', display: 'block' }}>
-              <img
-                src={FiveStar}
-                alt="Five star hygene rating."
-                style={{ boxShadow: '#909090a3 10px 10px 14px' }}
-              />
+              <a
+                href="https://www.foodhygieneratings.org.uk/pines-coffee-lounge-and-diner-filey"
+                target="_blank"
+              >
+                <img
+                  src={FiveStar}
+                  className="foodHygiene"
+                  alt="Five star hygene rating."
+                  style={{
+                    boxShadow: '0 3px 3px 0 #d6d6d6',
+                    borderRadius: '4px',
+                  }}
+                />
+              </a>
             </div>
           </section>
         </div>
