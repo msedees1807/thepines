@@ -19,28 +19,30 @@ class Header extends React.Component {
         `}
         render={data => (
           <header id="header">
-            <h1
-              className="titleText"
-              style={{
-                fontSize: '3em',
-                color: 'white',
-                marginBottom: '0px',
-                whiteSpace: 'nowrap',
-              }}
-            >
-              THE PINES
-            </h1>
-            <h3>Coffee Lounge & Diner</h3>
-            <p style={{ color: 'white' }}>Est. 2002</p>
-            <p style={{ color: 'white' }}>
-              7 Hope Street
-              <br />
-              Filey
-              <br />
-              North Yorkshire
-              <br />
-              YO14 9DJ
-            </p>
+            <div>
+              <h1
+                className="titleText"
+                style={{
+                  fontSize: '3em',
+                  color: 'white',
+                  marginBottom: '0px',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                THE PINES
+              </h1>
+              <h3>Coffee Lounge & Diner</h3>
+              <p style={{ color: 'white' }}>Est. 2002</p>
+              <p style={{ color: 'white' }}>
+                7 Hope Street
+                <br />
+                Filey
+                <br />
+                North Yorkshire
+                <br />
+                YO14 9DJ
+              </p>
+            </div>
             <Footer />
           </header>
         )}

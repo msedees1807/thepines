@@ -35,7 +35,9 @@ const menuCardItem = {
 
 const cardTitle = {
   color: '#005400',
+  fontFamily: 'Copperplate',
   fontWeight: 'bold',
+  textTransform: 'uppercase',
 }
 
 const nameStyle = {
@@ -84,7 +86,7 @@ export default class Menu extends React.Component {
         </div>
         <div className="menuFrame">
           <div style={menuCard}>
-            <h2 style={cardTitle}>Breakfasts and Light Bites</h2>
+            <h2 style={cardTitle}>Breakfasts & Light Bites</h2>
             {breakfast.map(data => (
               <MenuItem item={data} />
             ))}
