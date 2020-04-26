@@ -36,7 +36,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "clean": "gatsby clean"
   },
   "devDependencies": {
     "css-loader": "^2.1.1",

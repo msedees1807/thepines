@@ -1,5 +1,4 @@
 import React from 'react'
-import HamburgerIcon from '../../public/icons/hamburger.png'
 import Fab from '@material-ui/core/Fab'
 import Tooltip from '@material-ui/core/Tooltip'
 
@@ -23,7 +22,7 @@ export default class Hamburger extends React.Component {
         <div>
           <Tooltip title="View Menu">
             <Fab href="./menu" style={styles.Fab}>
-              <img src={HamburgerIcon} />
+              View Menu
             </Fab>
           </Tooltip>
         </div>
