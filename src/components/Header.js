@@ -20,7 +20,6 @@ class Header extends React.Component {
         render={data => (
           <header id="header">
             <div>
-              <p>hi</p>
               <h1
                 className="titleText"
                 style={{
