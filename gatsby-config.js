@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/thepines',
+  // pathPrefix: '/thepines',
   siteMetadata: {
     title: 'The Pines Coffee Lounge & Diner',
     author: 'Marc Edees',
