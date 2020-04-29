@@ -17,6 +17,7 @@ const styles = {
     fontSize: '0.75rem',
     textAlign: 'center',
     lineHeight: '1.5',
+    margin: '0px',
   },
 }
 
