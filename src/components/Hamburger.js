@@ -13,6 +13,11 @@ const styles = {
     right: '2vw',
     zIndex: 1000,
   },
+  Text: {
+    fontSize: '0.75rem',
+    textAlign: 'center',
+    lineHeight: '1.5',
+  },
 }
 
 export default class Hamburger extends React.Component {
@@ -22,7 +27,7 @@ export default class Hamburger extends React.Component {
         <div>
           <Tooltip title="View Menu">
             <Fab href="./menu" style={styles.Fab}>
-              View Menu
+              <p style={styles.Text}>View Menu</p>
             </Fab>
           </Tooltip>
         </div>

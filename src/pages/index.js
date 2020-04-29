@@ -109,7 +109,7 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>Margaret and Malcolm welcome you ...</h2>
+              <h2>Margaret and Malcolm welcome you</h2>
             </header>
             <p>
               We provide an extensive selection of delicious home cooked food,

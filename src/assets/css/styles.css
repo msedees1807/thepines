@@ -39,6 +39,7 @@ h2 {
   transform: scale(1.05);
   transition: 0.3s;
 }
+
 /* ---------- Larger Devices --------- */
 
 @media (min-width: 450px) {
