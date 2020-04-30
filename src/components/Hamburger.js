@@ -25,13 +25,11 @@ export default class Hamburger extends React.Component {
   render() {
     return (
       <div>
-        <div>
           <Tooltip title="View Menu">
             <Fab href="./menu" style={styles.Fab}>
               <p style={styles.Text}>View Menu</p>
             </Fab>
           </Tooltip>
-        </div>
       </div>
     )
   }
