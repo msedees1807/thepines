@@ -8,7 +8,7 @@ const styles = {
   Fab: {
     float: 'right',
     margin: '5%',
-    bottom: '6vh',
+    bottom: '11vh',
     position: 'fixed',
     right: '2vw',
     zIndex: 1000,
