@@ -8,7 +8,7 @@ const styles = {
   Fab: {
     float: 'right',
     margin: '5%',
-    bottom: '2vh',
+    bottom: '6vh',
     position: 'fixed',
     right: '2vw',
     zIndex: 1000,
@@ -25,11 +25,11 @@ export default class Hamburger extends React.Component {
   render() {
     return (
       <div>
-          <Tooltip title="View Menu">
-            <Fab href="./menu" style={styles.Fab}>
-              <p style={styles.Text}>View Menu</p>
-            </Fab>
-          </Tooltip>
+        <Tooltip title="View Menu">
+          <Fab href="./menu" style={styles.Fab}>
+            <p style={styles.Text}>View Menu</p>
+          </Fab>
+        </Tooltip>
       </div>
     )
   }
