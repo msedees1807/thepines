@@ -16,6 +16,13 @@ h2 {
   padding-left: 2vw;
 }
 
+.covidWarning {
+  background-color: #daffda;
+  padding: 13px;
+  border-radius: 16px;
+  color: #008a00;
+}
+
 .closeButton {
   color: rgb(122, 122, 122);
   text-decoration: none;
