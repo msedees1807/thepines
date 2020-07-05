@@ -7,7 +7,7 @@ class Footer extends React.Component {
         <div className="inner">
           <ul className="copyright">
             <li>&copy; The Pines Coffee Lounge & Diner</li>
-            <li>Design: Svvish Sites</li>
+            <li>Built By: Svvish Design</li>
           </ul>
         </div>
       </div>
