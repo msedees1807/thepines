@@ -7,17 +7,17 @@ export const breakfast = [
   },
   {
     name: 'Beans on Toast',
-    price: '£3.40',
+    price: '£3.50',
     description: null,
   },
   {
     name: 'Bacon Sandwich',
-    price: '£2.90',
+    price: '£3.00',
     description: null,
   },
   {
     name: 'Sausage Sandwich',
-    price: '£2.90',
+    price: '£3.00',
     description: null,
   },
   {
@@ -27,7 +27,7 @@ export const breakfast = [
   },
   {
     name: 'Toasted Teacake',
-    price: '£1.90',
+    price: '£2.00',
     description: null,
   },
 ]
@@ -35,22 +35,22 @@ export const breakfast = [
 export const softRolls = [
   {
     name: 'Cheese',
-    price: '£3.40',
+    price: '£3.50',
     description: null,
   },
   {
     name: 'Ham',
-    price: '£3.60',
+    price: '£3.70',
     description: null,
   },
   {
     name: 'Tuna and Mayonnaise',
-    price: '£3.60',
+    price: '£3.70',
     description: null,
   },
   {
     name: 'Prawns with Marié Rose Sauce',
-    price: '£4.40',
+    price: '£4.50',
     description: null,
   },
 ]
@@ -58,12 +58,12 @@ export const softRolls = [
 export const burgers = [
   {
     name: '4oz Beef Burger',
-    price: '£4.60',
+    price: '£4.80',
     description: null,
   },
   {
     name: '4oz Cheese Burger',
-    price: '£4.80',
+    price: '£5.00',
     description: null,
   },
 ]
@@ -71,12 +71,12 @@ export const burgers = [
 export const fish = [
   {
     name: 'Breaded Plaice',
-    price: '£6.30',
+    price: '£6.50',
     description: null,
   },
   {
     name: 'Whitby Breaded Scampi',
-    price: '£7.00',
+    price: '£7.20',
     description: null,
   },
 ]
@@ -84,32 +84,32 @@ export const fish = [
 export const pies = [
   {
     name: 'Steak Pie',
-    price: '£6.20',
+    price: '£6.40',
     description: null,
   },
   {
     name: 'Meat and Potato Pie',
-    price: '£6.20',
+    price: '£6.40',
     description: null,
   },
   {
     name: 'Turkey and Leek Pie',
-    price: '£6.20',
+    price: '£6.40',
     description: null,
   },
   {
     name: 'Chicken and Ham Pie',
-    price: '£6.20',
+    price: '£6.40',
     description: null,
   },
   {
     name: 'Chicken and Mushroom Pie',
-    price: '£6.20',
+    price: '£6.40',
     description: null,
   },
   {
     name: 'Mince and Onion Pie',
-    price: '£6.20',
+    price: '£6.40',
     description: null,
   },
 ]
@@ -117,18 +117,18 @@ export const pies = [
 export const other = [
   {
     name: '6oz Gammon',
-    price: '£6.30',
+    price: '£6.50',
     description: 'and an egg or garlic bread',
   },
   {
     name: 'Beef Lasagne',
-    price: '£7.00',
+    price: '£7.20',
     description: 'and garlic bread',
   },
   {
     name:
       'Childrens Meals: Beefburger, Sausages, Fish Fingers or Chicken Nuggets',
-    price: '£3.60',
+    price: '£3.80',
     description: 'Served with chips and peas or baked beans',
   },
 ]
@@ -136,42 +136,42 @@ export const other = [
 export const desserts = [
   {
     name: 'Apple Pie',
-    price: '£3.60',
+    price: '£3.80',
     description: null,
   },
   {
     name: 'Treacle Sponge',
-    price: '£3.60',
+    price: '£3.80',
     description: null,
   },
   {
     name: 'Sticky Toffee Pudding',
-    price: '£3.60',
+    price: '£3.80',
     description: null,
   },
   {
     name: 'Spotted Dick',
-    price: '£3.60',
+    price: '£3.80',
     description: null,
   },
   {
     name: 'Apple & Blackberry Crumble',
-    price: '£3.60',
+    price: '£3.80',
     description: null,
   },
   {
     name: 'Chocolate Fudge Cake',
-    price: '£3.60',
+    price: '£3.80',
     description: null,
   },
   {
     name: 'Strawberry or Chocolate Sundae',
-    price: '£3.60',
+    price: '£3.80',
     description: null,
   },
   {
     name: 'Vanilla Ice Cream',
-    price: '£3.30',
+    price: '£3.50',
     description: null,
   },
 ]
@@ -179,11 +179,11 @@ export const desserts = [
 export const cakes = [
   {
     name: 'Buttered Scone',
-    price: '£1.90',
+    price: '£2.00',
   },
   {
     name: 'Jam and Cream Scone',
-    price: '£2.60',
+    price: '£2.70',
   },
   {
     name: 'Muffins',
@@ -198,7 +198,7 @@ export const cakes = [
 export const sideOrders = [
   {
     name: 'Garlic Bread',
-    price: '£1.90',
+    price: '£2.00',
   },
   {
     name: 'Bread and Butter',
@@ -217,20 +217,20 @@ export const sideOrders = [
 export const beverages = [
   {
     name: 'Tea',
-    price: '£1.50 / £1.60',
+    price: '£1.60 / £1.70',
     description: '(Regular / Large) ',
   },
   {
     name: 'White Coffee',
-    price: '£1.80 / £1.90',
+    price: '£1.90 / £2.00',
   },
   {
     name: 'Cappuccino',
-    price: '£1.90 / £2.00',
+    price: '£2.00 / £2.10',
   },
   {
     name: 'Hot Chocolate',
-    price: '£1.90 / £2.00',
+    price: '£2.00 / £2.10',
   },
   {
     name: 'Cans',
