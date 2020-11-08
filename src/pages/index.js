@@ -110,10 +110,13 @@ class HomeIndex extends React.Component {
           <section id="one">
             <header className="major">
               <h3 className="covidWarning">
-                COVID-19 Update: Welcome back! <br />
+                {/* COVID-19 Update: Welcome back! <br />
                 We have taken great care in creating a safe environment and we
                 look forward to seeing you all very soon, <br />
-                Margaret & Malcolm
+                Margaret & Malcolm */}
+                COVID-19 Update: We will be reopening on Wednesday 2
+                <sup>nd</sup> December. Please keep well and stay safe, Margaret
+                & Malcolm
               </h3>
               <h2>Margaret and Malcolm welcome you</h2>
             </header>
