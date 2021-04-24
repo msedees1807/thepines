@@ -1,13 +1,7 @@
 import React from 'react'
 import '../assets/scss/main.scss'
 import Hamburger from '../components/Hamburger'
-import {
-  Container,
-  Row,
-  Col,
-  Visible,
-  ScreenClassRender,
-} from 'react-grid-system'
+import { Visible } from 'react-grid-system'
 
 import Header from './Header'
 

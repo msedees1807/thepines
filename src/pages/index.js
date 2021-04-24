@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Template from '../components/Layout'
-import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 import { Link } from 'gatsby'
 import { Visible } from 'react-grid-system'
@@ -87,7 +86,6 @@ class HomeIndex extends React.Component {
   }
   handleClickImage() {
     if (this.state.currentImage === this.props.images.length - 1) return
-
     this.gotoNext()
   }
 
@@ -114,9 +112,8 @@ class HomeIndex extends React.Component {
                 We have taken great care in creating a safe environment and we
                 look forward to seeing you all very soon, <br />
                 Margaret & Malcolm */}
-                COVID-19 Update: We will be reopening on Wednesday 2
-                <sup>nd</sup> December. Please keep well and stay safe, Margaret
-                & Malcolm
+                We will be reopening on Monday 17
+                <sup>th</sup> May. See you all soon, Margaret & Malcolm
               </h3>
               <h2>Margaret and Malcolm welcome you</h2>
             </header>
@@ -132,8 +129,20 @@ class HomeIndex extends React.Component {
               <div
                 style={{ width: '50%', textAlign: 'center', margin: '0 auto' }}
               >
-                <Link to="/menu" style={{ fontSize: '1.5em' }}>
-                  View Menu
+                <Link to="/menu">
+                  <button
+                    style={{
+                      padding: '10px',
+                      fontSize: '1.5rem',
+                      border: 'none',
+                      color: 'white',
+                      borderRadius: '8px',
+                      boxShadow: '0px 3px 5px 0px #80808063',
+                      background: '#54c3a3',
+                    }}
+                  >
+                    View Menu
+                  </button>
                 </Link>
               </div>
             </Visible>
@@ -157,6 +166,7 @@ class HomeIndex extends React.Component {
               <a
                 href="https://www.foodhygieneratings.org.uk/pines-coffee-lounge-and-diner-filey"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src={FiveStar}
