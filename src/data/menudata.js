@@ -136,42 +136,42 @@ export const other = [
 export const desserts = [
   {
     name: 'Apple Pie',
-    price: '£3.80',
+    price: '£4.00',
     description: null,
   },
   {
     name: 'Treacle Sponge',
-    price: '£3.80',
+    price: '£4.00',
     description: null,
   },
   {
     name: 'Sticky Toffee Pudding',
-    price: '£3.80',
+    price: '£4.00',
     description: null,
   },
   {
     name: 'Spotted Dick',
-    price: '£3.80',
+    price: '£4.00',
     description: null,
   },
   {
     name: 'Apple & Blackberry Crumble',
-    price: '£3.80',
+    price: '£4.00',
     description: null,
   },
   {
     name: 'Chocolate Fudge Cake',
-    price: '£3.80',
+    price: '£4.00',
     description: null,
   },
   {
     name: 'Strawberry or Chocolate Sundae',
-    price: '£3.80',
+    price: '£4.00',
     description: null,
   },
   {
     name: 'Vanilla Ice Cream',
-    price: '£3.50',
+    price: '£3.60',
     description: null,
   },
 ]
