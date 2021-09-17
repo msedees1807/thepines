@@ -106,17 +106,13 @@ class HomeIndex extends React.Component {
 
         <div id="main">
           <section id="one">
-            <header className="major">
+            {/* <header className="major">
               <h3 className="covidWarning">
-                {/* COVID-19 Update: Welcome back! <br />
-                We have taken great care in creating a safe environment and we
-                look forward to seeing you all very soon, <br />
-                Margaret & Malcolm */}
                 We will be reopening on Monday 17
                 <sup>th</sup> May. See you all soon, Margaret & Malcolm
               </h3>
               <h2>Margaret and Malcolm welcome you</h2>
-            </header>
+            </header> */}
             <p>
               We provide an extensive selection of delicious home cooked food,
               at very reasonable prices. Breakfasts (served until 11:30am), hot

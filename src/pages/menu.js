@@ -35,7 +35,6 @@ const menuCardItem = {
 
 const cardTitle = {
   color: '#005400',
-  fontFamily: 'Copperplate',
   fontWeight: 'bold',
   textTransform: 'uppercase',
 }
@@ -77,11 +76,16 @@ export default class Menu extends React.Component {
         >
           <h1
             className="titleText"
-            style={{ fontSize: '3em', marginBottom: '0px' }}
+            style={{
+              fontSize: '3em',
+
+              marginBottom: '0px',
+              whiteSpace: 'nowrap',
+            }}
           >
             THE PINES
+            <h1 style={{ fontSize: '2rem' }}>Coffee Lounge & Diner</h1>
           </h1>
-          <h3>Coffee Lounge & Diner</h3>
           <CloseButton />
         </div>
         <div className="menuFrame">
